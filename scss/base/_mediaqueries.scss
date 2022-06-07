@@ -1,0 +1,102 @@
+
+@media screen and (min-width:600px) {
+    /*index*/
+    .mainIndex {
+        padding: 1em;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 0.2fr 1fr 1fr; 
+            gap: 0px 0px 0px;
+            grid-template-areas:
+                "titulo titulo titulo"
+                "pUno pUno imgUno"
+                "pDos pDos imgDos";
+            .tituloIndex {
+                grid-area: titulo;
+                font-size: 2rem;
+            }
+            .pUno {
+                grid-area: pUno;
+            }
+            .pDos {
+                grid-area: pDos;
+            }
+            .imgUno {
+                grid-area: imgUno;
+            }
+        
+            .imgDos {
+                grid-area: imgDos;
+            }
+        }
+    }
+
+     /*shows*/
+    .tituloShows {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .showsLista {
+        font-size: 1.5rem;
+    } 
+
+    /*discografía*/
+    .mainDiscografia{
+        .tituloDiscografia {
+            font-size: 2rem;
+        }
+        .pDiscografia {
+            font-size: 1.2rem;
+        }
+    }
+
+    /*galeria*/
+    .tituloGaleria {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    //index
+    .mainIndex {
+        grid-template-columns: 1fr 1fr;
+        .container {
+            justify-content: start;
+            font-size: 1.2rem;
+        }
+        .contenedorDosIndex {
+            justify-content: end;
+            .fotoDosIndex{
+                display: block;
+                height: 15rem;
+                width: 30rem;
+            }
+        }
+    }
+    /*shows*/
+    .tituloShows {
+        text-align: start;
+        margin-left: 2rem;
+    }
+    .imgShows {
+        width: 25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /*discografía*/
+    .pDiscografia {
+        font-size: 1.5rem;
+    }
+    .sectionDiscografia {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*galeria*/
+    /*
+    .contenedorimagenes {
+        grid-template-areas: "bailando mdp quinto"
+            "lollaVeintidos redBull lollaDiecinueve";
+        justify-content: center;
+    }*/
+}

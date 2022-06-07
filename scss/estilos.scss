@@ -1,0 +1,192 @@
+@import "base/mediaqueries";
+@import "base/variables";
+@import "base/mixins";
+@import "base/extend";
+
+/*estilos para todos los html*/
+body {
+    background-color: rgb(135, 154, 238);
+    position: relative;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    header {
+        background-image: url(../img/header.jpg);
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            padding-top: $medida-principal;
+            font-size: 60px;
+            font-family: 'Bebas Neue', cursive;
+        }
+        nav {
+            @include spaces (0px 10px, 5px);
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                li {
+                    background-repeat: no-repeat;
+                    margin: $medida-principal;
+                    padding-bottom: $medida-principal;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    list-style-type: none;
+                    font-size: 1.2rem;
+                    &:hover {
+                        color: grey;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        &:hover {
+                            color: grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        h2 {
+            color: rgb(12, 53, 107);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 20px;
+            text-decoration: underline;
+        }
+        p {
+            margin: 13px;
+            font-size: $medida-principal;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        img {
+            margin: 50px;
+        }
+    }
+    footer {
+        background-image: url(../img/header.jpg);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        h3 {
+            @include spaces (10px, 10px);
+        }
+    }
+}
+/*estilos index*/
+.mainIndex {
+    display: grid;
+    .container {
+        align-items: start;
+        .pUno {
+            grid-area: pUno
+        }
+        .pDos {
+            grid-area: pDos;
+        }
+    }
+    .contenedorDosIndex {
+        align-items: end;
+        justify-content: center;
+        .fotoUnoIndex {
+            width: 30rem;
+            grid-area: img;
+        }
+        .fotoDosIndex {
+            display: none;
+        }
+    }
+}
+
+/*estilos discografía*/
+.mainDiscografia {
+    margin: 10px;
+    .tituloDiscografia {
+        text-align: end;
+    }
+    .sectionDiscografia {
+        display: grid;
+        
+        .divCaravana {
+            @extend %divsMusica;
+        }
+        
+        .divOscuroExtasis {
+            @extend %divsMusica;
+        }
+        
+        .divArrancarmelo {
+            @extend %divsMusica;
+        }
+    }
+}
+
+/*estilos shows*/
+.tituloShows {
+    text-align: end;
+}
+.h2Tour {
+    text-align: center;
+    margin-bottom: -20px;
+    color: rgb(47, 55, 65);
+}
+.padreImgShows {
+    display: grid;
+    .imgShows {
+        justify-self: center;
+    }
+}
+.padreShowsLista {
+    display: grid;
+    margin: 2.5rem;
+    .showsLista {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        justify-self: center;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/*estilos de galeria*/
+/* no borro este codigo porque no me convence del todo el carrusel*/
+/*.container {
+    text-align: end;
+}
+
+.contenedorimagenes {
+    display: grid;
+}
+
+.imgBailando {
+    grid-area: bailando;
+}
+
+.imgMdp {
+    grid-area: mdp;
+}
+
+.imgQuintoEscalon {
+    grid-area: Quinto
+}
+
+.imgLollaVeintidos {
+    grid-area: lollaVeintidos;
+}
+
+.imgRedBull {
+    grid-area: redBull;
+}
+
+.imgLollaDiecinueve {
+    grid-area: lollaDiecinueve;
+}
+*/
+
+/*contactanos*/
+.bodyContactanos {
+    overflow: hidden;
+    .h2Contactanos {
+        text-align: center;
+    }
+    .formulario {
+        text-align: center;
+        margin: 0px 150px;
+    }
+}

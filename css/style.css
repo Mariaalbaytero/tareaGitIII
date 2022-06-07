@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@media screen and (min-width: 600px) {
+  /*index*/
+  .mainIndex {
+    padding: 1em; }
+    .mainIndex .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 0.2fr 1fr 1fr;
+      gap: 0px 0px 0px;
+      grid-template-areas: "titulo titulo titulo" "pUno pUno imgUno" "pDos pDos imgDos"; }
+      .mainIndex .container .tituloIndex {
+        grid-area: titulo;
+        font-size: 2rem; }
+      .mainIndex .container .pUno {
+        grid-area: pUno; }
+      .mainIndex .container .pDos {
+        grid-area: pDos; }
+      .mainIndex .container .imgUno {
+        grid-area: imgUno; }
+      .mainIndex .container .imgDos {
+        grid-area: imgDos; }
+  /*shows*/
+  .tituloShows {
+    text-align: center;
+    font-size: 2rem; }
+  .showsLista {
+    font-size: 1.5rem; }
+  /*discografía*/
+  .mainDiscografia .tituloDiscografia {
+    font-size: 2rem; }
+  .mainDiscografia .pDiscografia {
+    font-size: 1.2rem; }
+  /*galeria*/
+  .tituloGaleria {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 1020px) {
+  .mainIndex {
+    grid-template-columns: 1fr 1fr; }
+    .mainIndex .container {
+      justify-content: start;
+      font-size: 1.2rem; }
+    .mainIndex .contenedorDosIndex {
+      justify-content: end; }
+      .mainIndex .contenedorDosIndex .fotoDosIndex {
+        display: block;
+        height: 15rem;
+        width: 30rem; }
+  /*shows*/
+  .tituloShows {
+    text-align: start;
+    margin-left: 2rem; }
+  .imgShows {
+    width: 25rem;
+    margin-bottom: 0.5rem; }
+  /*discografía*/
+  .pDiscografia {
+    font-size: 1.5rem; }
+  .sectionDiscografia {
+    grid-template-columns: 1fr 1fr 1fr; }
+  /*galeria*/
+  /*
+    .contenedorimagenes {
+        grid-template-areas: "bailando mdp quinto"
+            "lollaVeintidos redBull lollaDiecinueve";
+        justify-content: center;
+    }*/ }
+
+.mainDiscografia .sectionDiscografia .divCaravana, .mainDiscografia .sectionDiscografia .divOscuroExtasis, .mainDiscografia .sectionDiscografia .divArrancarmelo {
+  justify-self: center;
+  margin: 0.2rem; }
+
+/*estilos para todos los html*/
+body {
+  background-color: #879aee;
+  position: relative;
+  padding-bottom: 3rem;
+  min-height: 100vh; }
+  body header {
+    background-image: url(../img/header.jpg); }
+    body header h1 {
+      text-align: center;
+      text-decoration: underline;
+      padding-top: 1rem;
+      font-size: 60px;
+      font-family: 'Bebas Neue', cursive; }
+    body header nav {
+      padding: 0px 10px;
+      margin: 5px; }
+      body header nav ul {
+        display: flex;
+        justify-content: space-evenly; }
+        body header nav ul li {
+          background-repeat: no-repeat;
+          margin: 1rem;
+          padding-bottom: 1rem;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          list-style-type: none;
+          font-size: 1.2rem; }
+          body header nav ul li:hover {
+            color: grey; }
+          body header nav ul li a {
+            text-decoration: none;
+            color: black; }
+            body header nav ul li a:hover {
+              color: grey; }
+  body main h2 {
+    color: #0c356b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    text-decoration: underline; }
+  body main p {
+    margin: 13px;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  body main img {
+    margin: 50px; }
+  body footer {
+    background-image: url(../img/header.jpg);
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    body footer h3 {
+      padding: 10px;
+      margin: 10px; }
+
+/*estilos index*/
+.mainIndex {
+  display: grid; }
+  .mainIndex .container {
+    align-items: start; }
+    .mainIndex .container .pUno {
+      grid-area: pUno; }
+    .mainIndex .container .pDos {
+      grid-area: pDos; }
+  .mainIndex .contenedorDosIndex {
+    align-items: end;
+    justify-content: center; }
+    .mainIndex .contenedorDosIndex .fotoUnoIndex {
+      width: 30rem;
+      grid-area: img; }
+    .mainIndex .contenedorDosIndex .fotoDosIndex {
+      display: none; }
+
+/*estilos discografía*/
+.mainDiscografia {
+  margin: 10px; }
+  .mainDiscografia .tituloDiscografia {
+    text-align: end; }
+  .mainDiscografia .sectionDiscografia {
+    display: grid; }
+
+/*estilos shows*/
+.tituloShows {
+  text-align: end; }
+
+.h2Tour {
+  text-align: center;
+  margin-bottom: -20px;
+  color: #2f3741; }
+
+.padreImgShows {
+  display: grid; }
+  .padreImgShows .imgShows {
+    justify-self: center; }
+
+.padreShowsLista {
+  display: grid;
+  margin: 2.5rem; }
+  .padreShowsLista .showsLista {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-self: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem; }
+
+/*estilos de galeria*/
+/* no borro este codigo porque no me convence del todo el carrusel*/
+/*.container {
+    text-align: end;
+}
+
+.contenedorimagenes {
+    display: grid;
+}
+
+.imgBailando {
+    grid-area: bailando;
+}
+
+.imgMdp {
+    grid-area: mdp;
+}
+
+.imgQuintoEscalon {
+    grid-area: Quinto
+}
+
+.imgLollaVeintidos {
+    grid-area: lollaVeintidos;
+}
+
+.imgRedBull {
+    grid-area: redBull;
+}
+
+.imgLollaDiecinueve {
+    grid-area: lollaDiecinueve;
+}
+*/
+/*contactanos*/
+.bodyContactanos {
+  overflow: hidden; }
+  .bodyContactanos .h2Contactanos {
+    text-align: center; }
+  .bodyContactanos .formulario {
+    text-align: center;
+    margin: 0px 150px; }
