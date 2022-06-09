@@ -22,7 +22,7 @@
     <title>Galería</title>
 </head>
 
-<body>
+<body class="bodyGaleria">
     <div class="container-fluid">
         <header class="row">
             <h1 class="animate__animated animate__zoomIn col-12">Wos</h1>
@@ -56,55 +56,36 @@
                 </div>
             </nav>
         </header>
-        <!-- carrusel -->
-        <div class="row m-5 justify-content-center">
-            <div id="carouselExampleControls" class="carousel slide col-12" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="imgBailando" src="../img/imagen 1.jpg" class="d-block w-100" alt="Wos bailando"
-                            width="500px" height="500px">
-                    </div>
-                    <div class="carousel-item">
-                        <img aria-colspan="imgMdp" src="../img/wos mar del plata.webp" class="d-block w-100"
-                            alt="Wos cantando en Mar del Plata">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="imgQuintoEscalon" src="../img/Quinto escalon.jpg" class="d-block w-100"
-                            alt="Wos en el quinto escalón" width="500px" height="350px">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="imgLollaVeintidos" src="../img/wos lolla 2022.jpg" class="d-block w-100"
-                            alt="Wos en el lollapalooza 2022" width="500px" height="350px">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="imgRedBull" src="../img/Campeon Red Bull bien.jpg" class="d-block w-100"
-                            alt="Wos campeón de la Red Bull 2018" width="500px" height="350px">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="imgLollaDiecinueve" src="../img/wos lolla 2019.jpg" class="d-block w-100"
-                            alt="Wos cantando en el lollapalooza 2019" width="500px" height="350px">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-            <footer class="row">
-                <h3 class="col-12 m-0">©2022, desarrollado por @mariaalbaytero.</h3>
-            </footer>
-        </div>
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-            </script>
+        <main>
+            <h2 class="tituloGaleria">Imágenes</h2>
+            <section class="contenedorImagenes">
+                <img class="imgBailando" src="../img/imagen 1.jpg" alt="Wos bailando" width="500px" height="500px">
+
+                <img class="imgMdp" src="../img/wos mar del plata.webp" alt="Wos cantando en Mar del Plata"
+                    width="500px" height="500px">
+
+                <img class="imgQuintoEscalon" src="../img/Quinto escalon.jpg" alt="Wos en el quinto escalón"
+                    width="500px" height="350px">
+
+                <img class="imgLollaVeintidos" src="../img/wos lolla 2022.jpg" alt="Wos en el lollapalooza 2022"
+                    width="500px" height="350px">
+
+                <img class="imgRedBull" src="../img/Campeon Red Bull bien.jpg" alt="Wos campeón de la Red Bull 2018"
+                    width="500px" height="350px">
+
+                <img class="imgLollaDiecinueve" src="../img/wos lolla 2019.jpg"
+                    alt="Wos cantando en el lollapalooza 2019" width="500px" height="350px">
+            </section>
+        </main>
+    </div>
+    <footer class="row">
+        <h3 class="col-12 m-0">©2022, desarrollado por @mariaalbaytero.</h3>
+    </footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

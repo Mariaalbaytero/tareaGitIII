@@ -1,5 +1,26 @@
 @charset "UTF-8";
+.mainDiscografia .sectionDiscografia .divCaravana, .mainDiscografia .sectionDiscografia .divOscuroExtasis, .mainDiscografia .sectionDiscografia .divArrancarmelo {
+  justify-self: center;
+  margin: 0.2rem; }
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 2.7rem; }
+    footer h3 {
+      font-size: 1.2rem; }
+  /*index*/
+  .mainIndex .pUno {
+    font-size: 1rem; }
+  .mainIndex .pDos {
+    font-size: 1rem; }
+  .mainIndex .fotoUnoIndex {
+    max-width: 350px; } }
+
 @media screen and (min-width: 600px) {
+  footer {
+    height: 2.7rem; }
+    footer h3 {
+      font-size: 1.3rem; }
   /*index*/
   .mainIndex {
     padding: 1em; }
@@ -16,10 +37,11 @@
         grid-area: pUno; }
       .mainIndex .container .pDos {
         grid-area: pDos; }
-      .mainIndex .container .imgUno {
+      .mainIndex .container .fotoUnoIndex {
         grid-area: imgUno; }
-      .mainIndex .container .imgDos {
-        grid-area: imgDos; }
+      .mainIndex .container .fotoDosIndex {
+        grid-area: imgDos;
+        display: block; }
   /*shows*/
   .tituloShows {
     text-align: center;
@@ -33,9 +55,19 @@
     font-size: 1.2rem; }
   /*galeria*/
   .tituloGaleria {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .contenedorImagenes {
+    grid-template-areas: "bailando mdp" "quinto lollaVeintidos" "redBull lollaDiecinueve";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center; } }
 
 @media screen and (min-width: 1020px) {
+  footer {
+    height: 3rem; }
+    footer h3 {
+      font-size: 1.5rem; }
+  /*index*/
   .mainIndex {
     grid-template-columns: 1fr 1fr; }
     .mainIndex .container {
@@ -60,18 +92,18 @@
   .sectionDiscografia {
     grid-template-columns: 1fr 1fr 1fr; }
   /*galeria*/
-  /*
-    .contenedorimagenes {
-        grid-template-areas: "bailando mdp quinto"
-            "lollaVeintidos redBull lollaDiecinueve";
-        justify-content: center;
-    }*/ }
-
-.mainDiscografia .sectionDiscografia .divCaravana, .mainDiscografia .sectionDiscografia .divOscuroExtasis, .mainDiscografia .sectionDiscografia .divArrancarmelo {
-  justify-self: center;
-  margin: 0.2rem; }
+  .contenedorImagenes {
+    grid-template-areas: "bailando mdp" "quinto lollaVeintidos" "redBull lollaDiecinueve";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center; } }
 
 /*estilos para todos los html*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
   background-color: #879aee;
   position: relative;
@@ -150,6 +182,12 @@ body {
     text-align: end; }
   .mainDiscografia .sectionDiscografia {
     display: grid; }
+    .mainDiscografia .sectionDiscografia .divCaravana:hover {
+      transform: scale(1.05); }
+    .mainDiscografia .sectionDiscografia .divOscuroExtasis:hover {
+      transform: scale(1.05); }
+    .mainDiscografia .sectionDiscografia .divArrancarmelo:hover {
+      transform: scale(1.05); }
 
 /*estilos shows*/
 .tituloShows {
@@ -175,39 +213,41 @@ body {
     margin-bottom: 1rem; }
 
 /*estilos de galeria*/
-/* no borro este codigo porque no me convence del todo el carrusel*/
-/*.container {
-    text-align: end;
-}
-
-.contenedorimagenes {
-    display: grid;
-}
+.contenedorImagenes {
+  display: grid;
+  grid-template-areas: "bailando" "mdp" "quinto" "lollaVeintidos" "redBull"  "lollaDiecinueve";
+  justify-content: center; }
 
 .imgBailando {
-    grid-area: bailando;
-}
+  grid-area: bailando; }
+  .imgBailando:hover {
+    transform: scale(1.1); }
 
 .imgMdp {
-    grid-area: mdp;
-}
+  grid-area: mdp; }
+  .imgMdp:hover {
+    transform: scale(1.1); }
 
 .imgQuintoEscalon {
-    grid-area: Quinto
-}
+  grid-area: quinto; }
+  .imgQuintoEscalon:hover {
+    transform: scale(1.1); }
 
 .imgLollaVeintidos {
-    grid-area: lollaVeintidos;
-}
+  grid-area: lollaVeintidos; }
+  .imgLollaVeintidos:hover {
+    transform: scale(1.1); }
 
 .imgRedBull {
-    grid-area: redBull;
-}
+  grid-area: redBull; }
+  .imgRedBull:hover {
+    transform: scale(1.1); }
 
 .imgLollaDiecinueve {
-    grid-area: lollaDiecinueve;
-}
-*/
+  grid-area: lollaDiecinueve; }
+  .imgLollaDiecinueve:hover {
+    transform: scale(1.1); }
+
 /*contactanos*/
 .bodyContactanos {
   overflow: hidden; }

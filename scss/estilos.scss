@@ -1,9 +1,14 @@
-@import "base/mediaqueries";
 @import "base/variables";
 @import "base/mixins";
 @import "base/extend";
+@import "base/mediaqueries";
 
 /*estilos para todos los html*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: rgb(135, 154, 238);
     position: relative;
@@ -106,14 +111,23 @@ body {
         
         .divCaravana {
             @extend %divsMusica;
+            &:hover {
+                transform: scale(1.05);
+            }
         }
         
         .divOscuroExtasis {
             @extend %divsMusica;
+            &:hover {
+                transform: scale(1.05);
+            }
         }
         
         .divArrancarmelo {
             @extend %divsMusica;
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
 }
@@ -145,39 +159,60 @@ body {
 }
 
 /*estilos de galeria*/
-/* no borro este codigo porque no me convence del todo el carrusel*/
-/*.container {
-    text-align: end;
-}
 
-.contenedorimagenes {
+.contenedorImagenes {
     display: grid;
+    grid-template-areas: "bailando"
+                         "mdp"
+                         "quinto"
+                         "lollaVeintidos"
+                         "redBull" 
+                         "lollaDiecinueve";
+    justify-content: center;    
 }
 
 .imgBailando {
     grid-area: bailando;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
+
 
 .imgMdp {
     grid-area: mdp;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .imgQuintoEscalon {
-    grid-area: Quinto
+    grid-area: quinto;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .imgLollaVeintidos {
     grid-area: lollaVeintidos;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .imgRedBull {
     grid-area: redBull;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .imgLollaDiecinueve {
     grid-area: lollaDiecinueve;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
-*/
 
 /*contactanos*/
 .bodyContactanos {
