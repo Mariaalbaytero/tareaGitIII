@@ -13,11 +13,17 @@
         .pDos{
             font-size: $medida-principal;
         }
-        .fotoUnoIndex{
-            max-width: 400px;
-        }
-        .fotoDosIndex{
-            display: none;
+        .contenedorDosIndex{
+            display: grid;
+            .fotoUnoIndex{
+                max-width: 300px;
+                margin: 2rem 0rem;
+                padding: 0rem;
+                justify-self: center;
+            }
+            .fotoDosIndex{
+                display: none;
+            }
         }
     }
     /*galería*/

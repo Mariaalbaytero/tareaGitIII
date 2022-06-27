@@ -16,10 +16,15 @@
     font-size: 1rem; }
   .mainIndex .pDos {
     font-size: 1rem; }
-  .mainIndex .fotoUnoIndex {
-    max-width: 400px; }
-  .mainIndex .fotoDosIndex {
-    display: none; }
+  .mainIndex .contenedorDosIndex {
+    display: grid; }
+    .mainIndex .contenedorDosIndex .fotoUnoIndex {
+      max-width: 300px;
+      margin: 2rem 0rem;
+      padding: 0rem;
+      justify-self: center; }
+    .mainIndex .contenedorDosIndex .fotoDosIndex {
+      display: none; }
   /*galería*/
   .contenedorImagenes {
     grid-template-areas: "bailando" "mdp" "quinto" "lollaVeintidos" "redBull"  "lollaDiecinueve";
