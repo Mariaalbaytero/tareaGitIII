@@ -146,6 +146,7 @@ body {
     display: grid;
     .imgShows {
         justify-self: center;
+        @extend %boxShadow;
     }
 }
 .padreShowsLista {

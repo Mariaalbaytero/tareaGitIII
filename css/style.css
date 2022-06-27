@@ -3,7 +3,7 @@
   justify-self: center;
   margin: 0.2rem; }
 
-.mainIndex .contenedorDosIndex .fotoUnoIndex, .mainIndex .contenedorDosIndex .fotoDosIndex, .imgBailando, .imgMdp, .imgQuintoEscalon, .imgLollaVeintidos, .imgRedBull, .imgLollaDiecinueve {
+.mainIndex .contenedorDosIndex .fotoUnoIndex, .mainIndex .contenedorDosIndex .fotoDosIndex, .padreImgShows .imgShows, .imgBailando, .imgMdp, .imgQuintoEscalon, .imgLollaVeintidos, .imgRedBull, .imgLollaDiecinueve {
   box-shadow: 0.3rem 0.3rem 0.2rem #11112c; }
 
 @media screen and (max-width: 600px) {
@@ -17,7 +17,7 @@
   .mainIndex .pDos {
     font-size: 1rem; }
   .mainIndex .fotoUnoIndex {
-    max-width: 350px; }
+    max-width: 400px; }
   .mainIndex .fotoDosIndex {
     display: none; }
   /*galería*/
