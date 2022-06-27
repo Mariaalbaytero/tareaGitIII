@@ -16,6 +16,19 @@
         .fotoUnoIndex{
             max-width: 350px;
         }
+        .fotoDosIndex{
+            display: none;
+        }
+    }
+    /*galería*/
+    .contenedorImagenes{
+        grid-template-areas: "bailando"
+                         "mdp"
+                         "quinto"
+                         "lollaVeintidos"
+                         "redBull" 
+                         "lollaDiecinueve";
+    justify-content: center;
     }
 }
 @media screen and (min-width:600px) {
@@ -53,7 +66,6 @@
         
             .fotoDosIndex {
                 grid-area: imgDos;
-                display: block;
             }
         }
     }
@@ -85,13 +97,13 @@
         grid-template-areas: "bailando mdp"
                              "quinto lollaVeintidos"
                              "redBull lollaDiecinueve";
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr; 
         justify-content: center;
     }
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width:1020px) {
     footer{
         height: 3rem;
         h3{
@@ -138,8 +150,14 @@
         grid-template-areas: "bailando mdp"
                              "quinto lollaVeintidos"
                              "redBull lollaDiecinueve";
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr; 
         justify-content: center;
+        .imgLollaDiecinueve{
+            margin-top: -4rem;
+        }
+        .imgRedBull{
+            margin-top: -4rem;
+        }
     }
 }

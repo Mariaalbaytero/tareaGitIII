@@ -3,6 +3,9 @@
   justify-self: center;
   margin: 0.2rem; }
 
+.mainIndex .contenedorDosIndex .fotoUnoIndex, .mainIndex .contenedorDosIndex .fotoDosIndex, .imgBailando, .imgMdp, .imgQuintoEscalon, .imgLollaVeintidos, .imgRedBull, .imgLollaDiecinueve {
+  box-shadow: 0.3rem 0.3rem 0.2rem #11112c; }
+
 @media screen and (max-width: 600px) {
   footer {
     height: 2.7rem; }
@@ -14,7 +17,13 @@
   .mainIndex .pDos {
     font-size: 1rem; }
   .mainIndex .fotoUnoIndex {
-    max-width: 350px; } }
+    max-width: 350px; }
+  .mainIndex .fotoDosIndex {
+    display: none; }
+  /*galería*/
+  .contenedorImagenes {
+    grid-template-areas: "bailando" "mdp" "quinto" "lollaVeintidos" "redBull"  "lollaDiecinueve";
+    justify-content: center; } }
 
 @media screen and (min-width: 600px) {
   footer {
@@ -40,8 +49,7 @@
       .mainIndex .container .fotoUnoIndex {
         grid-area: imgUno; }
       .mainIndex .container .fotoDosIndex {
-        grid-area: imgDos;
-        display: block; }
+        grid-area: imgDos; }
   /*shows*/
   .tituloShows {
     text-align: center;
@@ -58,7 +66,7 @@
     font-size: 2rem; }
   .contenedorImagenes {
     grid-template-areas: "bailando mdp" "quinto lollaVeintidos" "redBull lollaDiecinueve";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center; } }
 
@@ -94,9 +102,13 @@
   /*galeria*/
   .contenedorImagenes {
     grid-template-areas: "bailando mdp" "quinto lollaVeintidos" "redBull lollaDiecinueve";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center; } }
+    justify-content: center; }
+    .contenedorImagenes .imgLollaDiecinueve {
+      margin-top: -4rem; }
+    .contenedorImagenes .imgRedBull {
+      margin-top: -4rem; } }
 
 /*estilos para todos los html*/
 * {
@@ -110,7 +122,7 @@ body {
   padding-bottom: 3rem;
   min-height: 100vh; }
   body header {
-    background-image: url(../img/header.jpg); }
+    background-image: url(../img/header.webp); }
     body header h1 {
       text-align: center;
       text-decoration: underline;
@@ -149,7 +161,7 @@ body {
   body main img {
     margin: 50px; }
   body footer {
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/header.webp);
     position: absolute;
     bottom: 0;
     width: 100%; }
@@ -172,8 +184,6 @@ body {
     .mainIndex .contenedorDosIndex .fotoUnoIndex {
       width: 30rem;
       grid-area: img; }
-    .mainIndex .contenedorDosIndex .fotoDosIndex {
-      display: none; }
 
 /*estilos discografía*/
 .mainDiscografia {
@@ -214,9 +224,7 @@ body {
 
 /*estilos de galeria*/
 .contenedorImagenes {
-  display: grid;
-  grid-template-areas: "bailando" "mdp" "quinto" "lollaVeintidos" "redBull"  "lollaDiecinueve";
-  justify-content: center; }
+  display: grid; }
 
 .imgBailando {
   grid-area: bailando; }

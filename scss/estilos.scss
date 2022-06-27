@@ -15,7 +15,7 @@ body {
     padding-bottom: 3rem;
     min-height: 100vh;
     header {
-        background-image: url(../img/header.jpg);
+        background-image: url(../img/header.webp);
         h1 {
             text-align: center;
             text-decoration: underline;
@@ -66,7 +66,7 @@ body {
         }
     }
     footer {
-        background-image: url(../img/header.jpg);
+        background-image: url(../img/header.webp);
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -93,9 +93,10 @@ body {
         .fotoUnoIndex {
             width: 30rem;
             grid-area: img;
+            @extend %boxShadow;
         }
-        .fotoDosIndex {
-            display: none;
+        .fotoDosIndex{
+            @extend %boxShadow;
         }
     }
 }
@@ -161,18 +162,12 @@ body {
 /*estilos de galeria*/
 
 .contenedorImagenes {
-    display: grid;
-    grid-template-areas: "bailando"
-                         "mdp"
-                         "quinto"
-                         "lollaVeintidos"
-                         "redBull" 
-                         "lollaDiecinueve";
-    justify-content: center;    
+    display: grid;    
 }
 
 .imgBailando {
     grid-area: bailando;
+    @extend %boxShadow;
     &:hover {
         transform: scale(1.1);
     }
@@ -181,6 +176,7 @@ body {
 
 .imgMdp {
     grid-area: mdp;
+    @extend %boxShadow;
     &:hover {
         transform: scale(1.1);
     }
@@ -188,6 +184,7 @@ body {
 
 .imgQuintoEscalon {
     grid-area: quinto;
+    @extend %boxShadow;
     &:hover {
         transform: scale(1.1);
     }
@@ -195,6 +192,7 @@ body {
 
 .imgLollaVeintidos {
     grid-area: lollaVeintidos;
+    @extend %boxShadow;
     &:hover {
         transform: scale(1.1);
     }
@@ -202,6 +200,7 @@ body {
 
 .imgRedBull {
     grid-area: redBull;
+    @extend %boxShadow;
     &:hover {
         transform: scale(1.1);
     }
@@ -209,6 +208,7 @@ body {
 
 .imgLollaDiecinueve {
     grid-area: lollaDiecinueve;
+    @extend %boxShadow;
     &:hover {
         transform: scale(1.1);
     }
