@@ -34,9 +34,28 @@
                          "lollaVeintidos"
                          "redBull" 
                          "lollaDiecinueve";
-    justify-content: center;
+        justify-content: center;
+        .imgBailando{
+            width: 80%;
+        }
+        .imgMdp{
+            width: 80%;
+        }
+        .imgQuintoEscalon{
+            width: 80%;
+        }
+        .imgLollaVeintidos{
+            width: 80%;
+        }
+        .imgRedBull{
+            width: 80%;
+        }
+        .imgLollaDiecinueve{
+            width: 80%;
+        }
     }
 }
+
 @media screen and (min-width:600px) {
     footer{
         height: 2.7rem;
@@ -159,11 +178,5 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr; 
         justify-content: center;
-        .imgLollaDiecinueve{
-            margin-top: -4rem;
-        }
-        .imgRedBull{
-            margin-top: -4rem;
-        }
     }
 }

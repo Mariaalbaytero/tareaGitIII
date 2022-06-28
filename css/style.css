@@ -28,7 +28,19 @@
   /*galería*/
   .contenedorImagenes {
     grid-template-areas: "bailando" "mdp" "quinto" "lollaVeintidos" "redBull"  "lollaDiecinueve";
-    justify-content: center; } }
+    justify-content: center; }
+    .contenedorImagenes .imgBailando {
+      width: 80%; }
+    .contenedorImagenes .imgMdp {
+      width: 80%; }
+    .contenedorImagenes .imgQuintoEscalon {
+      width: 80%; }
+    .contenedorImagenes .imgLollaVeintidos {
+      width: 80%; }
+    .contenedorImagenes .imgRedBull {
+      width: 80%; }
+    .contenedorImagenes .imgLollaDiecinueve {
+      width: 80%; } }
 
 @media screen and (min-width: 600px) {
   footer {
@@ -109,11 +121,7 @@
     grid-template-areas: "bailando mdp" "quinto lollaVeintidos" "redBull lollaDiecinueve";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center; }
-    .contenedorImagenes .imgLollaDiecinueve {
-      margin-top: -4rem; }
-    .contenedorImagenes .imgRedBull {
-      margin-top: -4rem; } }
+    justify-content: center; } }
 
 /*estilos para todos los html*/
 * {
